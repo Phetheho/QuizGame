@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">My Quiz App</string>
+    <string name="choose_topic">Choose A Topic</string>
+    <string name="basketball_history">Basketball is a sport, generally played by two teams of five
+        players on a rectangular court. The objective is to shoot a ball through a hoop 18 inches
+        (46 cm) in diameter and mounted at a height of 10 feet (3.048 m) to backboards at each end
+        of the court.
+    </string>
+    <string name="continue_quiz">Continue</string>
+    <string name="cancel">Cancel</string>
+    <string name="Next">Next</string>
+    <string name="rules">Rules:</string>
 </resources>
