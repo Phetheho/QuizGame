@@ -13,7 +13,6 @@ public class ChooseTopics extends AppCompatActivity {
 
     AlertDialog.Builder bBallAlert;
 
-    AlertDialog.Builder rulesAlert;
 
 
 
@@ -32,25 +31,14 @@ public class ChooseTopics extends AppCompatActivity {
         bBallAlert.setTitle("Basketball");
         bBallAlert.setMessage(R.string.basketball_history);
 
+
         bBallAlert.setPositiveButton(R.string.continue_quiz, new DialogInterface.OnClickListener() {
 
             public void onClick(DialogInterface dialog, int id){
 
-                rulesAlert.setTitle(R.string.rules);
-                rulesAlert.setMessage("1. Attempting ");
+                Intent intent = new Intent(ChooseTopics.this, Basketball.class);
 
-                rulesAlert.setPositiveButton(R.string.continue_quiz, new DialogInterface.OnClickListener(){
-
-
-                    public  void onClick(DialogInterface dialogOne, int idOne){
-
-                        Intent intent = new Intent(ChooseTopics.this, Basketball.class);
-
-                        startActivity(intent);
-
-                    }
-                });
-
+                startActivity(intent);
 
             }
 
@@ -64,7 +52,6 @@ public class ChooseTopics extends AppCompatActivity {
             }
 
         });
-
 
         bBallAlert.show();
     }

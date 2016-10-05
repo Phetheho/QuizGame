@@ -2,7 +2,10 @@
 <resources>
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
-    <color name="basketBallView">#E0E0E0</color>
-    <color name="floating_button">#303F9F</color>
+    <color name="colorAccent">#3F51B5</color>
+    <color name="basketBallView">#FFFFFF</color>
+    <color name="floating_button">#02A8F3</color>
+    <color name="question_text">#0D5E9F</color>
+    <color name="question_view">#E6EE9C</color>
+    <color name="options_color">#81D4FA</color>
 </resources>
