@@ -3,7 +3,8 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_below="@+id/question_view">
+    android:id="@+id/radio_group"
+    android:layout_marginTop="370dp">
 
         <RadioButton
             android:id="@+id/option_1"
@@ -12,7 +13,7 @@
             android:textSize="20sp"
             android:layout_marginBottom="8dp"
             android:textColor="@color/question_text"
-            android:onClick="radioButtonOnClick"/>
+            android:onClick="radioButtonOnClick" />
         <RadioButton
             android:id="@+id/option_2"
             android:layout_width="wrap_content"

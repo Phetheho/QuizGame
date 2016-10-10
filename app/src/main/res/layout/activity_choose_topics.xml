@@ -3,42 +3,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     android:background="#4DB6AC"
     tools:context="com.example.codetribe.myquizapp.ChooseTopics"
     android:visibility="visible">
 
 
-    <ImageView
-        android:id="@+id/quiz_image"
-        android:src="@drawable/phex"
-        android:scaleType="centerCrop"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
 
-    <TextView
-        android:id="@+id/choose_topic"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/choose_topic"
-        android:layout_centerHorizontal="false"
-        android:textSize="30sp"
-        android:textAlignment="inherit"
-        android:textColor="#ECEFF1"
-        android:layout_marginTop="150dp"/>
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/welcome_screen_toolbar">
 
-
+    </include>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:weightSum="1"
-        android:layout_below="@id/choose_topic">
+        android:layout_below="@id/tool_bar"
+        android:layout_marginTop="5dp">
 
+
+        <TextView
+            android:id="@+id/choose_topic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/choose_topic"
+            android:textSize="30sp"
+            android:textAlignment="inherit"
+            android:textColor="@color/choose_topic_text" />
 
         <Button
             android:layout_width="match_parent"
@@ -50,7 +43,9 @@
             android:textColor="#004D40"
             android:textStyle="bold"
             android:layout_marginBottom="6dp"
-            android:onClick="basketBallTopic"/>
+            android:onClick="basketBallTopic"
+            android:textSize="18sp"
+            android:fontFamily="cursive"/>
 
         <Button
             android:layout_width="match_parent"
@@ -61,7 +56,9 @@
             android:alpha="0.75"
             android:textColor="#004D40"
             android:textStyle="bold"
-            android:layout_marginBottom="6dp"/>
+            android:layout_marginBottom="6dp"
+            android:textSize="18sp"
+            android:fontFamily="cursive"/>
 
         <Button
             android:layout_width="match_parent"
@@ -71,7 +68,9 @@
             android:background="#B2EBF2"
             android:alpha="0.75"
             android:textColor="#004D40"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:layout_marginBottom="6dp"
+            android:fontFamily="cursive"/>
 
 
     </LinearLayout>

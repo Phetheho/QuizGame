@@ -175,6 +175,10 @@ public class Basketball extends AppCompatActivity {
         rightAnswerAlert.setMessage(rightAnswerMessage[currentQustion]);
 
 
+
+
+
+
         switch (view.getId()){
             case R.id.option_1:
                 if (checked){
@@ -219,6 +223,7 @@ public class Basketball extends AppCompatActivity {
 
                         toast = Toast.makeText(context,message,duration);
                         toast.show();
+
 
                         currentQustion++;
 
@@ -281,7 +286,7 @@ public class Basketball extends AppCompatActivity {
                     if (possibleAnswer == answers[currentQustion]){
                         score = 20;
                         message = "Correct Answer + " + score + " Points";
-
+                        
                         toast = Toast.makeText(context,message,duration);
                         toast.show();
 

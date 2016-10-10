@@ -10,4 +10,7 @@
     <string name="cancel">Cancel</string>
     <string name="Next">Next</string>
     <string name="rules">Rules:</string>
+    <string name="app_heading">My Quiz App</string>
+    <string name="app_developer"> by Koena Phetheho Sello</string>
+    <string name="score_text">Your Score:</string>
 </resources>
